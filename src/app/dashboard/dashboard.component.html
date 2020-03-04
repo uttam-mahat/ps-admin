@@ -1,0 +1,215 @@
+<div class="container-fluid">
+
+  <div class="row row-flex">
+    <div class="col-lg-3 col-sm-6">
+      <div class="card card-stats" routerLink="/order-placed">
+        <div class="card-body ">
+          <div class="row">
+            <div class="col-4">
+              <div class="icon-big text-center icon-warning">
+                <i class="material-icons">library_books</i>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="numbers">
+                <p class="card-category">Order Placed</p>
+                <h4 class="card-title">15</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="card card-stats" routerLink="/order-processing">
+        <div class="card-body ">
+          <div class="row">
+            <div class="col-4">
+              <div class="icon-big text-center icon-warning">
+                <i class="material-icons">cached</i>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="numbers">
+                <p class="card-category">Processing</p>
+                <h4 class="card-title">5</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 c  ol-sm-6">
+      <div class="card card-stats" routerLink="/order-readyForCollection">
+        <div class="card-body ">
+          <div class="row">
+            <div class="col-4">
+              <div class="icon-big text-center icon-warning">
+                <i class="material-icons">collections_bookmark</i>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="numbers">
+                <p class="card-category">Ready For Collection</p>
+                <h4 class="card-title">5</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="card card-stats" routerLink="/order-paymentPending">
+        <div class="card-body ">
+          <div class="row">
+            <div class="col-4">
+              <div class="icon-big text-center icon-warning">
+                <i class="material-icons">money_off</i>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="numbers">
+                <p class="card-category">Payment Pending</p>
+                <h4 class="card-title">4</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-flex">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+      <div class="card card-box fixed-h">
+        <div class="card-head">
+          <div class="card-header-wrapper">
+            <header>Order Placed</header>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-wrap">
+            <div class="table-responsive dataTables_wrapper">
+              <table #dataTable class="table dataTable">
+                <thead>
+                  <tr role="row">
+                    <th>No</th>
+                    <th>Product Name</th>
+                    <th>Status</th>
+                    <th>Attachment</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>Wooden Sculpture</td>
+                    <td>Order Placed</td>
+                    <td>
+                      <button aria-label="Download" class="btn btn-tbl-download btn-xs hint--top">
+                        <i aria-hidden="true" class="fa fa-download"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+      <div class="card card-box fixed-h">
+        <div class="card-head">
+          <div class="card-header-wrapper">
+            <header>Processing</header>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-wrap">
+            <div class="table-responsive dataTables_wrapper">
+              <table #dataTable class="table dataTable">
+                <thead>
+                  <tr role="row">
+                    <th>No</th>
+                    <th>Product Name</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>Wooden Sculpture</td>
+                    <td>Processing</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+      <div class="card card-box fixed-h">
+        <div class="card-head">
+          <div class="card-header-wrapper">
+            <header>Order Ready for Collection</header>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-wrap">
+            <div class="table-responsive dataTables_wrapper">
+              <table #dataTable class="table dataTable">
+                <thead>
+                  <tr role="row">
+                    <th>No</th>
+                    <th>Product Name</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>krennova</td>
+                    <td>Ready for Collection</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+      <div class="card card-box fixed-h">
+        <div class="card-head">
+          <div class="card-header-wrapper">
+            <header>Payment Pending</header>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-wrap">
+            <div class="table-responsive dataTables_wrapper">
+              <table #dataTable class="table dataTable">
+                <thead>
+                  <tr role="row">
+                    <th>No</th>
+                    <th>Product Name</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>krennova</td>
+                    <td>Payment Pending</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

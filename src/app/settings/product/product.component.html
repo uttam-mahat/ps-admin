@@ -1,0 +1,661 @@
+<div class="container-fluid">
+
+  <!-- page top bar start -->
+  <div class="page-bar">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card-box">
+          <div class="card-head">
+            <header>Product</header>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- page top bar close -->
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="profile-tab-box">
+        <ul class="nav">
+          <li class="nav-item tab-all">
+            <a class="nav-link active show" href="#productCategory" data-toggle="tab">
+              Product Category Type
+            </a>
+          </li>
+          <li class="nav-item tab-all">
+            <a class="nav-link" href="#productOffer" data-toggle="tab">
+              Product Offer
+            </a>
+          </li>
+          <li class="nav-item tab-all">
+            <a class="nav-link" href="#attributes" data-toggle="tab">
+              Attributes
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-content">
+        <!-- productCategory tab start -->
+        <div class="tab-pane active show" id="productCategory">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="card card-box">
+                <div class="card-head">
+                  <div class="card-header-wrapper">
+                    <header>Product Category Type</header>
+                    <div class="tools">
+                      <div class="tool-btn-wrapper">
+                        <button aria-label="Add" class="btn btn-tbl-add btn-xs hint--top showModal"
+                          data-target="#productCategoryTypeEditAddFormModal" data-toggle="modal">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="table-wrap">
+                    <div class="table-responsive dataTables_wrapper">
+                      <table #dataTable class="table dataTable">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>Parent Name</th>
+                            <th>Name</th>
+                            <th>Code</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Parent Category Name</td>
+                            <td>Product Category Type Name</td>
+                            <td>s6d5f4</td>
+                            <td>
+                              <button aria-label="view" class="btn btn-tbl-view btn-xs hint--top showModal"
+                                data-target="#productCategoryTypeViewFormModal" data-toggle="modal">
+                                <i class="fa fa-eye"></i>
+                              </button>
+                              <button aria-label="edit" class="btn btn-tbl-edit btn-xs hint--top showModal"
+                                data-target="#productCategoryTypeEditAddFormModal" data-toggle="modal">
+                                <i class="fa fa-pencil-alt"></i>
+                              </button>
+                              <button aria-label="delete" class="btn btn-tbl-delete btn-xs hint--top">
+                                <i class="fa fa-trash-alt"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal productCategoryTypeViewFormModal start -->
+            <div aria-labelledby="productCategoryTypeViewFormModal" class="modal detail-view-page-modal right fade show"
+              id="productCategoryTypeViewFormModal" role="dialog" aria-modal="true">
+              <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header"><a aria-label="Close" class="modal-title" data-dismiss="modal"
+                      id="productCategoryTypeViewFormModal">
+                      <i aria-hidden="true" class="fa fa-angle-left"></i>
+                      View Product Category Type</a>
+                  </div>
+                  <div class="modal-body">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                          <div class="card card-box">
+                            <div class="card-head">
+                              <header>Category Type</header>
+                            </div>
+                            <div class="card-body">
+                              <ul class="list-group list-group-unbordered">
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-4 col-sm-4"><b>Parent Category Name</b></div>
+                                    <div class="col-md-8 col-sm-8">
+                                      <div class="info-desc-item">Parent Category Name</div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-4 col-sm-4"><b>Category Name</b></div>
+                                    <div class="col-md-8 col-sm-8">
+                                      <div class="info-desc-item">Product Category Name</div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-4 col-sm-4"><b>Code</b></div>
+                                    <div class="col-md-8 col-sm-8">
+                                      <div class="info-desc-item">sd56f4</div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-12 col-sm-12"><b>Description: </b></div>
+                                    <div class="col-md-12 col-sm-12">
+                                      <div class="info-desc-item">
+                                        <p>Bharat Prasad Nepal is a senior researcher and M.D. of Agrica Nepal. He
+                                          owns a long
+                                          experience in termite management and agri trade business. He possesses
+                                          sound knowledge on
+                                          the pesticides, nursery management of seedlings and cut flowers and a
+                                          renowned termite
+                                          specialist in Nepal. He has attended several trainings on termites.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal productCategoryTypeViewFormModal close -->
+
+            <!-- Popup Modal productCategoryTypeEditAddFormModal start -->
+            <div class="modal detail-view-page-modal right fade" id="productCategoryTypeEditAddFormModal" tabindex="-1"
+              role="dialog" aria-labelledby="productCategoryTypeEditAddFormModal" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <a class="modal-title" data-dismiss="modal" aria-label="Close"
+                      id="productCategoryTypeEditAddFormModal">
+                      <i aria-hidden="true" class="fa fa-angle-left"></i>
+                      Product Category Type
+                    </a>
+                  </div>
+                  <div class="modal-body">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                          <div class="card card-box">
+                            <div class="card-head">
+                              <header>Category Type</header>
+                            </div>
+                            <div class="card-body row">
+                              <form action="" class="productCategoryTypeAddForm" id="productCategoryTypeAddForm">
+                                <div class="col-lg-6 p-t-10">
+                                  <div class="select-input mdl-textfield txt-full-width">
+                                    <label class="floating-label" for="parentId">Parent Name</label>
+                                    <select class="mdl-textfield_input" formcontrolname="parentId" id="parentId">
+                                      <option disabled="true" selected="true">Choose...</option>
+                                      <option>option 1</option>
+                                      <option>option 2</option>
+                                      <option>option 3</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 p-t-10">
+                                  <div
+                                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                    <label for="name">Name</label>
+                                    <input class="mdl-textfield_input" type="text" id="name">
+                                  </div>
+                                </div>
+                                <div class="col-lg-12 p-t-10">
+                                  <div
+                                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                    <label for="code">Code</label>
+                                    <input class="mdl-textfield_input" type="text" id="code">
+                                  </div>
+                                </div>
+                                <div class="col-lg-12 p-t-10">
+                                  <div
+                                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                    <label for="description">Description</label>
+                                    <ck-editor name="editor1" [(ngModel)]="editorValue" skin="moono-lisa" language="en"
+                                      [fullPage]="true">
+                                    </ck-editor>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-12 p-t-10 text-center">
+                                  <button type="reset" class="mdl-button mdl-js-button mdl-button--raised  btn-default">
+                                    Reset
+                                  </button>
+                                  <button type="button"
+                                    class="mdl-button mdl-js-button mdl-button--raised fill-primary">
+                                    Save
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal productCategoryTypeEditAddFormModal close -->
+          </div>
+        </div>
+        <!-- productCategory tab close -->
+
+        <!-- productOffer tab start -->
+        <div class="tab-pane" id="productOffer">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="card card-box">
+                <div class="card-head">
+                  <div class="card-header-wrapper">
+                    <header>Product Offer</header>
+                    <div class="tools">
+                      <div class="tool-btn-wrapper">
+                        <button aria-label="Add" class="btn btn-tbl-add btn-xs hint--top showModal"
+                          data-target="#productOfferTypeEditAddFormModal" data-toggle="modal">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="table-wrap">
+                    <div class="table-responsive dataTables_wrapper">
+                      <table #dataTable class="table dataTable">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>Product Offer Name</th>
+                            <th>Discount Percentage</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Product Offer Name</td>
+                            <td>s6d5f4</td>
+                            <td>
+                              <button aria-label="view" class="btn btn-tbl-view btn-xs hint--top showModal"
+                                data-target="#productOfferTypeViewFormModal" data-toggle="modal">
+                                <i class="fa fa-eye"></i>
+                              </button>
+                              <button aria-label="edit" class="btn btn-tbl-edit btn-xs hint--top showModal"
+                                data-target="#productOfferTypeEditAddFormModal" data-toggle="modal">
+                                <i class="fa fa-pencil-alt"></i>
+                              </button>
+                              <button aria-label="delete" class="btn btn-tbl-delete btn-xs hint--top">
+                                <i class="fa fa-trash-alt"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal productOfferTypeViewFormModal start -->
+            <div aria-labelledby="productOfferTypeViewFormModal" class="modal detail-view-page-modal right fade show"
+              id="productOfferTypeViewFormModal" role="dialog" aria-modal="true">
+              <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header"><a aria-label="Close" class="modal-title" data-dismiss="modal"
+                      id="productOfferTypeViewFormModal">
+                      <i aria-hidden="true" class="fa fa-angle-left"></i>
+                      View Product Offer</a>
+                  </div>
+                  <div class="modal-body">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                          <div class="card card-box">
+                            <div class="card-head">
+                              <header>Product Offer Name</header>
+                            </div>
+                            <div class="card-body">
+                              <ul class="list-group list-group-unbordered">
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-4 col-sm-4"><b>Product Name</b></div>
+                                    <div class="col-md-8 col-sm-8">
+                                      <div class="info-desc-item">fgProductsd</div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-4 col-sm-4"><b>Product Offer Name</b></div>
+                                    <div class="col-md-8 col-sm-8">
+                                      <div class="info-desc-item">Productdgd 56sd</div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-4 col-sm-4"><b>Discount Percentage</b></div>
+                                    <div class="col-md-8 col-sm-8">
+                                      <div class="info-desc-item">sd56f4</div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-4 col-sm-4"><b>Hot Deal</b></div>
+                                    <div class="col-md-8 col-sm-8">
+                                      <div class="info-desc-item">True</div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-12 col-sm-12"><b>Description: </b></div>
+                                    <div class="col-md-12 col-sm-12">
+                                      <div class="info-desc-item">
+                                        <p>Bharat Prasad Nepal is a senior researcher and M.D. of Agrica Nepal. He
+                                          owns a long
+                                          experience in termite management and agri trade business. He possesses
+                                          sound knowledge on
+                                          the pesticides, nursery management of seedlings and cut flowers and a
+                                          renowned termite.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal productOfferTypeViewFormModal close -->
+
+            <!-- Popup Modal productOfferTypeEditAddFormModal start -->
+            <div class="modal detail-view-page-modal right fade" id="productOfferTypeEditAddFormModal" tabindex="-1"
+              role="dialog" aria-labelledby="productOfferTypeEditAddFormModal" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <a class="modal-title" data-dismiss="modal" aria-label="Close"
+                      id="productOfferTypeEditAddFormModal">
+                      <i aria-hidden="true" class="fa fa-angle-left"></i>
+                      Product Offer
+                    </a>
+                  </div>
+                  <div class="modal-body">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                          <div class="card card-box">
+                            <div class="card-head">
+                              <header>Product Offer</header>
+                            </div>
+                            <div class="card-body row">
+                              <form action="" class="contactUsAddForm" id="contactUsAddForm">
+                                <div class="col-lg-6 p-t-10">
+                                  <div class="select-input mdl-textfield txt-full-width">
+                                    <label class="floating-label" for="productId">Product</label>
+                                    <select class="mdl-textfield_input" formcontrolname="productId" id="productId">
+                                      <option disabled="true" selected="true">Choose...</option>
+                                      <option>option 1</option>
+                                      <option>option 2</option>
+                                      <option>option 3</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 p-t-10">
+                                  <div
+                                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                    <label for="productOfferName">Product Offer Name</label>
+                                    <input class="mdl-textfield_input" type="text" id="productOfferName">
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 p-t-10">
+                                  <div
+                                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                    <label for="discountPercentage">Discount Percentage</label>
+                                    <input class="mdl-textfield_input" type="text" id="discountPercentage">
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 p-t-10">
+                                  <div class="checkbox-p-b-0 mdl-textfield  txt-full-width">
+                                    <label>Hot Deal</label>
+                                    <div class="mdl-textfield  txt-full-width">
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                        <input class="custom-control-input" id="hotDealYes" name="hotDeal" type="radio"
+                                          value="True">
+                                        <label class="custom-control-label" for="hotDealYes">Yes</label>
+                                      </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                        <input class="custom-control-input" id="hotDealNo" name="hotDeal" type="radio"
+                                          value="False">
+                                        <label class="custom-control-label" for="hotDealNo">No</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-12 p-t-10">
+                                  <div
+                                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                    <label for="description">Description</label>
+                                    <ck-editor name="editor1" [(ngModel)]="editorValue" skin="moono-lisa" language="en"
+                                      [fullPage]="true">
+                                    </ck-editor>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-12 p-t-10 text-center">
+                                  <button type="reset" class="mdl-button mdl-js-button mdl-button--raised  btn-default">
+                                    Reset
+                                  </button>
+                                  <button type="button"
+                                    class="mdl-button mdl-js-button mdl-button--raised fill-primary">
+                                    Save
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal productOfferTypeEditAddFormModal close -->
+          </div>
+        </div>
+        <!-- productOffer tab close -->
+
+        <!-- attributes tab start -->
+        <div class="tab-pane" id="attributes">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="card card-box">
+                <div class="card-head">
+                  <div class="card-header-wrapper">
+                    <header>Attributes</header>
+                    <div class="tools">
+                      <div class="tool-btn-wrapper">
+                        <button aria-label="Add" class="btn btn-tbl-add btn-xs hint--top showModal"
+                          data-target="#attributesEditAddFormModal" data-toggle="modal">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="table-wrap">
+                    <div class="table-responsive dataTables_wrapper">
+                      <table #dataTable class="table dataTable">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>Title</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Title Name</td>
+                            <td>
+                              <button aria-label="view" class="btn btn-tbl-view btn-xs hint--top showModal"
+                                data-target="#attributesViewFormModal" data-toggle="modal">
+                                <i class="fa fa-eye"></i>
+                              </button>
+                              <button aria-label="edit" class="btn btn-tbl-edit btn-xs hint--top showModal"
+                                data-target="#attributesEditAddFormModal" data-toggle="modal">
+                                <i class="fa fa-pencil-alt"></i>
+                              </button>
+                              <button aria-label="delete" class="btn btn-tbl-delete btn-xs hint--top">
+                                <i class="fa fa-trash-alt"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Popup Modal attributesViewFormModal start -->
+            <div aria-labelledby="attributesViewFormModal" class="modal detail-view-page-modal right fade show"
+              id="attributesViewFormModal" role="dialog" aria-modal="true">
+              <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header"><a aria-label="Close" class="modal-title" data-dismiss="modal"
+                      id="attributesViewFormModal">
+                      <i aria-hidden="true" class="fa fa-angle-left"></i>
+                      View Attributes</a>
+                  </div>
+                  <div class="modal-body">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                          <div class="card card-box">
+                            <div class="card-head">
+                              <header>Attribute</header>
+                            </div>
+                            <div class="card-body">
+                              <ul class="list-group list-group-unbordered">
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-4 col-sm-4"><b>Title</b></div>
+                                    <div class="col-md-8 col-sm-8">
+                                      <div class="info-desc-item">Title Name</div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-12 col-sm-12"><b>Description:
+                                      </b></div>
+                                    <div class="col-md-12 col-sm-12">
+                                      <div class="info-desc-item">
+                                        <p>Bharat Prasad Nepal is a senior researcher and M.D. of
+                                          Agrica Nepal. He owns a long experience in termite management and agri trade
+                                          business. He possesses sound knowledge on the pesticides, nursery management
+                                          of seedlings and cut flowers and a renowned termite specialist in Nepal. He
+                                          has attended several trainings on termites.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal attributesViewFormModal close -->
+
+            <!-- Popup Modal attributesEditAddFormModal start -->
+            <div class="modal detail-view-page-modal right fade" id="attributesEditAddFormModal" tabindex="-1"
+              role="dialog" aria-labelledby="attributesEditAddFormModal" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <a class="modal-title" data-dismiss="modal" aria-label="Close" id="attributesEditAddFormModal">
+                      <i aria-hidden="true" class="fa fa-angle-left"></i>
+                      Attributes
+                    </a>
+                  </div>
+                  <div class="modal-body">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                          <div class="card card-box">
+                            <div class="card-head">
+                              <header>Attributes</header>
+                            </div>
+                            <div class="card-body row">
+                              <form action="" class="attributesAddForm" id="attributesAddForm">
+                                <div class="col-lg-12 p-t-10">
+                                  <div
+                                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                    <label for="title">Title</label>
+                                    <input class="mdl-textfield_input" type="text" id="title">
+                                  </div>
+                                </div>
+                                <div class="col-lg-12 p-t-10">
+                                  <div
+                                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                    <label for="description">Description</label>
+                                    <ck-editor name="editor1" [(ngModel)]="editorValue" skin="moono-lisa" language="en"
+                                      [fullPage]="true">
+                                    </ck-editor>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-12 p-t-10 text-center">
+                                  <button type="reset" class="mdl-button mdl-js-button mdl-button--raised  btn-default">
+                                    Reset
+                                  </button>
+                                  <button type="button"
+                                    class="mdl-button mdl-js-button mdl-button--raised fill-primary">
+                                    Save
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal attributesEditAddFormModal close -->
+          </div>
+        </div>
+        <!-- attributes tab close -->
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <div class="card card-box">
+        <div class="card-head">
+          <div class="card-header-wrapper">
+            <header>Admin</header>
+            <div class="tools">
+              <div class="tool-btn-wrapper">
+                <button routerLink="/admin-add" aria-label="Add" class="btn btn-tbl-add btn-xs hint--top"
+                  data-toggle="modal">
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-wrap">
+            <div class="table-responsive dataTables_wrapper">
+              <table #dataTable class="table dataTable">
+                <thead>
+                  <tr role="row">
+                    <th>No</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>Woture</td>
+                    <td>exampl@gmail.com</td>
+                    <td>
+                      <button routerLink="/admin-view" class="btn btn-tbl-view btn-xs hint--top" data-toggle='modal'
+                        aria-label="view">
+                        <i class="fa fa-eye"></i>
+                      </button>
+                      <button routerLink="/admin-edit" class="btn btn-tbl-edit btn-xs hint--top" aria-label="Edit">
+                        <i class="fa fa-pencil-alt"></i>
+                      </button>
+                      <button class="btn btn-tbl-delete btn-xs hint--top" aria-label="Delete">
+                        <i class="fa fa-trash-alt"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>Burd</td>
+                    <td>exampl@gmail.com</td>
+                    <td>
+                      <button routerLink="/admin-view" class="btn btn-tbl-view btn-xs hint--top" data-toggle='modal'
+                        aria-label="view">
+                        <i class="fa fa-eye"></i>
+                      </button>
+                      <button routerLink="/admin-edit" class="btn btn-tbl-edit btn-xs hint--top" aria-label="Edit">
+                        <i class="fa fa-pencil-alt"></i>
+                      </button>
+                      <button class="btn btn-tbl-delete btn-xs hint--top" aria-label="Delete">
+                        <i class="fa fa-trash-alt"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

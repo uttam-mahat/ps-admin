@@ -1,0 +1,165 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <div class="card card-box">
+        <div class="card-head">
+          <div class="card-header-wrapper">
+            <header>Carts</header>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="table-wrap">
+            <div class="table-responsive dataTables_wrapper">
+              <table #dataTable class="table dataTable">
+                <thead>
+                  <tr role="row">
+                    <th>No</th>
+                    <th>Product Name</th>
+                    <th>Required Quantity</th>
+                    <th>Total Price</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>Business card</td>
+                    <td>800</td>
+                    <td>9520</td>
+                    <td>
+                      <button aria-label="view" class="btn btn-tbl-view btn-xs hint--top showModal"
+                        data-target="#cartsViewFormModal" data-toggle="modal">
+                        <i class="fa fa-eye"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Popup Modal cartsViewFormModal start -->
+      <div aria-labelledby="cartsViewFormModal" class="modal detail-view-page-modal right fade show"
+        id="cartsViewFormModal" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header"><a aria-label="Close" class="modal-title" data-dismiss="modal"
+                id="cartsViewFormModal">
+                <i aria-hidden="true" class="fa fa-angle-left"></i>
+                View Carts</a>
+            </div>
+            <div class="modal-body">
+              <div class="col-lg-12">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card card-box">
+                      <div class="card-head">
+                        <header>Carts</header>
+                      </div>
+                      <div class="card-body">
+                        <ul class="list-group list-group-unbordered">
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12">
+                                <div class="img-wrapper">
+                                  <img alt="image" class="product-img img-fluid"
+                                    src="https://api.agricanepal.com.np/people/photo_1565502243976.jpg">
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-md-4 col-sm-4"><b>Product Name</b></div>
+                              <div class="col-md-8 col-sm-8">
+                                <div class="info-desc-item">Name sdf</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-md-4 col-sm-4"><b>Required Quantity</b></div>
+                              <div class="col-md-8 col-sm-8">
+                                <div class="info-desc-item">800</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-md-4 col-sm-4"><b>Weignt in Gm</b></div>
+                              <div class="col-md-8 col-sm-8">
+                                <div class="info-desc-item">700</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-md-4 col-sm-4"><b>Normal Price</b></div>
+                              <div class="col-md-8 col-sm-8">
+                                <div class="info-desc-item">999</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-md-4 col-sm-4"><b>Urgent Price</b></div>
+                              <div class="col-md-8 col-sm-8">
+                                <div class="info-desc-item">999</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-md-4 col-sm-4"><b>Paper GSM</b></div>
+                              <div class="col-md-8 col-sm-8">
+                                <div class="info-desc-item">99</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-md-4 col-sm-4"><b>Additional Cost</b></div>
+                              <div class="col-md-8 col-sm-8">
+                                <div class="info-desc-item">990</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-md-4 col-sm-4"><b>Total Price</b></div>
+                              <div class="col-md-8 col-sm-8">
+                                <div class="info-desc-item">1990</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-md-4 col-sm-4"><b>Is Urgent</b></div>
+                              <div class="col-md-8 col-sm-8">
+                                <div class="info-desc-item">Yes</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row">
+                              <div class="col-md-4 col-sm-4"><b>Special Requirement</b></div>
+                              <div class="col-md-8 col-sm-8">
+                                <div class="info-desc-item">.............</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Popup Modal cartsViewFormModal close -->
+    </div>
+  </div>
+</div>

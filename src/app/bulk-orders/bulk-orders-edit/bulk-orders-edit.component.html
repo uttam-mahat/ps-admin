@@ -1,0 +1,62 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 col-sm-12">
+      <div class="card card-box">
+        <div class="card-head">
+          <a routerLink="/bulk-orders" id="panel-button" class="mdl-button mdl-button--icon collapsed">
+            <i class="material-icons">arrow_back_ios</i>
+          </a>
+          <header>Edit Bulk Orders</header>
+        </div>
+        <div class="card-body row">
+          <form action="" class="bulkOrdersFrom" id="bulkOrdersFrom">
+            <div class="col-lg-4 p-t-10">
+              <div class="select-input mdl-textfield txt-full-width">
+                <label class="floating-label" for="customerId">Customer</label>
+                <select class="mdl-textfield_input" formcontrolname="customerId" id="customerId">
+                  <option disabled="true" selected="true">Choose...</option>
+                  <option>option 1</option>
+                  <option>option 2</option>
+                  <option>option 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-4 p-t-10">
+              <div class="select-input mdl-textfield txt-full-width">
+                <label class="floating-label" for="productId">Product</label>
+                <select class="mdl-textfield_input" formcontrolname="productId" id="productId">
+                  <option disabled="true" selected="true">Choose...</option>
+                  <option>option 1</option>
+                  <option>option 2</option>
+                  <option>option 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-3 p-t-10">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                <label for="requiredQuantity">Required Quantity</label>
+                <input class="mdl-textfield_input" type="number" id="requiredQuantity">
+              </div>
+            </div>
+            <div class="col-lg-12 p-t-10">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                <label for="message">Message</label>
+                <ck-editor name="editor1" [(ngModel)]="editorValue" skin="moono-lisa" language="en" [fullPage]="true">
+                </ck-editor>
+              </div>
+            </div>
+
+            <div class="col-lg-12 p-t-10 text-center">
+              <button type="reset" class="mdl-button mdl-js-button mdl-button--raised  btn-default">
+                Reset
+              </button>
+              <button type="button" class="mdl-button mdl-js-button mdl-button--raised fill-primary">
+                Update
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

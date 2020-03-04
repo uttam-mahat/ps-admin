@@ -1,0 +1,14 @@
+#accordion .card {
+  border: 0;
+}
+
+#accordion .card-header.collapsed {
+  border-radius: 6px;
+}
+
+#accordion .card-header {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  align-items: center;
+  transition: all 0.2s;
+}

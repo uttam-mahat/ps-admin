@@ -1,0 +1,197 @@
+﻿<div class="flex-container">
+  <div class="box sidebar navbar-dark" id="sidebar" [ngClass]="status ? 'sidebar' : 'sidebarToggle'">
+    <!-- navbar section -->
+    <div class="sidebar">
+
+      <nav class="navbar navbar-expand-lg">
+
+        <!-- logo start -->
+        <div class="page-logo">
+          <a routerLink="/dashboard">
+            <img alt="logo" src="../assets/img/logo.png">
+          </a>
+        </div>
+        <!-- logo end -->
+
+        <div class="collapse navbar-collapse sidebar-offcanvas" id="navbarSupportedContent">
+
+          <ul class="navbar-item-container navbar-nav mr-auto">
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a routerLink="">
+                <i class="material-icons">dashboard</i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a routerLink="/admin">
+                <i class="material-icons">verified_user</i>
+                <p>Admin</p>
+              </a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a routerLink="/users">
+                <i class="material-icons">person</i>
+                <p>Users</p>
+              </a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a routerLink="/aboutUs">
+                <i class="material-icons">file_copy</i>
+                <p>About Us</p>
+              </a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a routerLink="/products">
+                <i class="material-icons">archive</i>
+                <p>Product</p>
+              </a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a routerLink="/order-management">
+                <i class="material-icons">dynamic_feed</i>
+                <p>Order Management</p>
+              </a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a routerLink="/bulk-orders">
+                <i class="material-icons">library_books</i>
+                <p>Bulk Orders</p>
+              </a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a routerLink="/carts">
+                <i class="material-icons">shopping_cart</i>
+                <p>Carts</p>
+              </a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a routerLink="/faqs">
+                <i class="material-icons">question_answer</i>
+                <p>FAQs</p>
+              </a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a class="nav-link nav-toggle sub-menu-toggler" data-target=".settings-collapse" data-toggle="collapse">
+                <i class="material-icons icon-user">settings</i>
+                <p>Settings</p>
+                <i class="material-icons arrow-rotate">arrow_right</i>
+              </a>
+              <ul class="sub-menu settings-collapse collapse" data-parent="#navbarSupportedContent">
+                <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                  <a routerLink="/settings/homepage" class="nav-link">
+                    <span class="sub-title">Homepage</span>
+                  </a>
+                </li>
+                <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                  <a routerLink="/settings/product" class="nav-link">
+                    <span class="sub-title">Product</span>
+                  </a>
+                </li>
+                <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                  <a routerLink="/settings/price-management" class="nav-link">
+                    <span class="sub-title">Price Management</span>
+                  </a>
+                </li>
+                <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                  <a routerLink="/settings/roles" class="nav-link">
+                    <span class="sub-title">Roles</span>
+                  </a>
+                </li>
+                <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                  <a routerLink="/settings/address" class="nav-link">
+                    <span class="sub-title">Address</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+              <a routerLink="/settings-backup">
+                <p>Settings Backup</p>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- navbar section closed -->
+
+  </div>
+  <div class="boxTwo main-panel light-theme" id="mainPanel" [ngClass]="status ? 'main-panel' : 'mainToggle'">
+    <div class="page-header navbar" *ngIf="currentUser">
+      <div class="page-header-inner ">
+        <!-- logo start -->
+        <div class="page-logo mobile-show">
+          <a routerLink="/dashboard">
+            <img alt="logo" src="../assets/img/logo-sm.png">
+          </a>
+        </div>
+        <!-- logo end -->
+
+        <!-- start mobile menu -->
+        <a href="javascript:;" class="menu-toggler responsive-toggler collapsed" (click)="sidebarToggle()"
+          data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+          <button>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+        </a>
+        <!-- end mobile menu -->
+
+        <!-- start header menu -->
+        <button class="sidebarToggle btn btn-info hidden-phone" (click)="sidebarToggle()"><i class="fa fa-bars"
+            aria-hidden="true"></i></button>
+
+        <div class="top-menu">
+          <ul class="nav navbar-nav pull-right">
+            <!-- start manage user dropdown -->
+            <li class="dropdown dropdown-user">
+              <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                data-close-others="true">
+                <img alt="" class="img-circle " id="nav-profile-image" src="assets/img/default.jpg">
+                <span class="username username-hide-on-mobile" id="nav-username"> User </span>
+                <!-- <i class="fa fa-angle-down"></i> -->
+              </a>
+              <ul class="dropdown-menu dropdown-menu-default navbar-item-container">
+                <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                  <a routerLink="/user-profile">
+                    <i class="material-icons">account_circle</i>
+                    <p>Profile</p>
+                  </a>
+                </li>
+
+                <li class="divider"> </li>
+
+                <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"
+                  class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+                  <a (click)="logout()">
+                    <i class="material-icons icon-logout"> exit_to_app </i>
+                    <p>Log Out</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="view-page page-content-wrapper">
+      <div class="page-content">
+        <ngx-ui-loader></ngx-ui-loader>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div class="page-footer-inner"> 2019 ©
+        <a routerLink="krennovatech.com/" target="_blank" class="makerCss">
+          KrennovaTech
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.img-wrapper img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-wrapper {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .img-wrapper img {
+    height: 180px;
+  }
+}

@@ -1,0 +1,240 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <div class="card card-box">
+        <div class="card-head">
+          <a routerLink="/products" id="panel-button" class="mdl-button mdl-button--icon collapsed">
+            <i class="material-icons">arrow_back_ios</i>
+          </a>
+          <header>Add Product Information</header>
+        </div>
+        <div class="card-body row">
+          <form action="" class="productFrom" id="productFrom">
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-lg-4 p-t-10">
+                  <div class="file-upload-wrapper row">
+                    <div class="col-lg-12">
+                      <label class="control-label" for="customFile">Product Image</label>
+                      <div class="custom-file m-b-10">
+                        <input accept=".png,.jpg,.jpeg"
+                          class="custom-file-input profilePhoto ng-untouched ng-pristine ng-valid"
+                          formcontrolname="photo" id="customFile" multiple="" type="file">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 p-t-10">
+                  <div class="select-input mdl-textfield txt-full-width">
+                    <label class="floating-label" for="superCategoryId">Super Category</label>
+                    <select class="mdl-textfield_input" formcontrolname="superCategoryId" id="superCategoryId">
+                      <option disabled="true" selected="true">Choose...</option>
+                      <option>option 1</option>
+                      <option>option 2</option>
+                      <option>option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4 p-t-10">
+                  <div class="select-input mdl-textfield txt-full-width">
+                    <label class="floating-label" for="categoryId">Category Type</label>
+                    <select class="mdl-textfield_input" formcontrolname="categoryId" id="categoryId">
+                      <option disabled="true" selected="true">Choose...</option>
+                      <option>option 1</option>
+                      <option>option 2</option>
+                      <option>option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="productName">Product Name</label>
+                    <input class="mdl-textfield_input" type="text" id="productName">
+                  </div>
+                </div>
+                <div class="col-lg-4 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="productCode">Product Code</label>
+                    <input class="mdl-textfield_input" type="text" id="productCode">
+                  </div>
+                </div>
+                <div class="col-lg-4 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="productKey">Product Key</label>
+                    <input class="mdl-textfield_input" type="text" id="productKey">
+                  </div>
+                </div>
+                <div class="col-lg-3 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="productProfitMargin">Profit Margin</label>
+                    <input class="mdl-textfield_input" type="text" id="productProfitMargin">
+                  </div>
+                </div>
+                <div class="col-lg-3 p-t-10">
+                  <div class="select-input mdl-textfield txt-full-width">
+                    <label class="floating-label" for="unitId">Unit ID</label>
+                    <select class="mdl-textfield_input" formcontrolname="unitId" id="unitId">
+                      <option disabled="true" selected="true">Choose...</option>
+                      <option>unit-1</option>
+                      <option>unit-2</option>
+                      <option>unit-3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 p-t-20">
+              <div class="mdl-textfield txt-full-width">
+                <div class="sub-header">
+                  <header>Measurements</header>
+                </div>
+                <div class="dashed-divider"></div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-lg-3 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="width">Width</label>
+                    <input class="mdl-textfield_input" type="number" id="width">
+                  </div>
+                </div>
+                <div class="col-lg-3 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="height">Height</label>
+                    <input class="mdl-textfield_input" type="number" id="height">
+                  </div>
+                </div>
+                <div class="col-lg-3 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="paperGSM">Paper GSM</label>
+                    <input class="mdl-textfield_input" type="text" id="paperGSM">
+                  </div>
+                </div>
+                <div class="col-lg-3 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="weightInGm">Weight In Gm</label>
+                    <input class="mdl-textfield_input" type="text" id="weightInGm">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 p-t-20">
+              <div class="mdl-textfield txt-full-width">
+                <div class="sub-header">
+                  <header>Min/Max Quantity</header>
+                </div>
+                <div class="dashed-divider"></div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-lg-4 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="minimumQuantity">Minimum Quantity</label>
+                    <input class="mdl-textfield_input" type="number" id="minimumQuantity">
+                  </div>
+                </div>
+                <div class="col-lg-4 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="maximumQuantity">Maximum Quantity</label>
+                    <input class="mdl-textfield_input" type="number" id="maximumQuantity">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 p-t-20">
+              <div class="mdl-textfield txt-full-width">
+                <div class="sub-header">
+                  <header>Price</header>
+                </div>
+                <div class="dashed-divider"></div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-lg-4 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="normalPrice">Normal Price</label>
+                    <input class="mdl-textfield_input" type="number" id="normalPrice">
+                  </div>
+                </div>
+                <div class="col-lg-4 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="urgentPrice">Urgent Price</label>
+                    <input class="mdl-textfield_input" type="number" id="urgentPrice">
+                  </div>
+                </div>
+                <div class="col-lg-4 p-t-10">
+                  <div class="select-input mdl-textfield txt-full-width">
+                    <label class="floating-label" for="additionalCostId">Additional Cost</label>
+                    <select class="mdl-textfield_input" formcontrolname="additionalCostId" id="additionalCostId">
+                      <option disabled="true" selected="true">Choose...</option>
+                      <option>unit-1</option>
+                      <option>unit-2</option>
+                      <option>unit-3</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 p-t-20">
+              <div class="mdl-textfield txt-full-width">
+                <div class="sub-header">
+                  <header>Time</header>
+                </div>
+                <div class="dashed-divider"></div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-lg-4 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="normalProductionTime">Normal Production Time</label>
+                    <input class="mdl-textfield_input" type="text" id="normalProductionTime">
+                  </div>
+                </div>
+                <div class="col-lg-4 p-t-10">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                    <label for="urgentProductionTime">Urgent Production Time</label>
+                    <input class="mdl-textfield_input" type="text" id="urgentProductionTime">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 p-t-20">
+              <div class="mdl-textfield txt-full-width">
+                <div class="sub-header">
+                  <header>Description</header>
+                </div>
+                <div class="dashed-divider"></div>
+              </div>
+            </div>
+            <div class="col-lg-12 p-t-10">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                <label for="productDescription">Description</label>
+                <ck-editor name="editor1" [(ngModel)]="editorValue" skin="moono-lisa" language="en" [fullPage]="true">
+                </ck-editor>
+              </div>
+            </div>
+
+            <div class="col-lg-12 p-t-10 text-center">
+              <button type="reset" class="mdl-button mdl-js-button mdl-button--raised  btn-default">
+                Reset
+              </button>
+              <button type="button" class="mdl-button mdl-js-button mdl-button--raised fill-primary">
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

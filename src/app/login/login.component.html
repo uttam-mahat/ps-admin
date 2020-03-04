@@ -1,0 +1,37 @@
+﻿<div class="loginwrapper">
+  <div class="limiter">
+    <div class="container-login">
+      <div class="wrap-login">
+        <form class="login-form validate-form" [formGroup]="loginForm">
+          <div class="login-header">
+            <div class="login-logo">
+              <img src="../../assets/img/logo.png" alt="logo" class="logo img-responsive">
+            </div>
+            <span class="login-form-title">
+              Login
+            </span>
+          </div>
+          <div class="wrap-input-field validate-input">
+            <label for="userName" class="control-label">Username</label>
+            <input class="input-field" id="userName" type="text" name="username" placeholder="Username"
+              title="JohnSmith" autocomplete="off" formControlName="username">
+          </div>
+          <div class="wrap-input-field validate-input">
+            <label for="userPassword" class="control-label">Password</label>
+            <input class="input-field" id="userPassword" type="password" name="pass" placeholder="Password"
+              title="Abc123$" formControlName="password">
+          </div>
+          <div class="container-login-form-btn">
+            <div class="wrap-login-form-btn">
+              <button class="login-form-btn" [disabled]="!loginForm.valid" (click)="onSubmit(loginForm)">Login</button>
+            </div>
+            <div class="footer-link">
+              <a routerLink="/forgot-password">Forgot Password?</a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

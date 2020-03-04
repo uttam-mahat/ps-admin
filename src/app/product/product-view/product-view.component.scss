@@ -1,0 +1,16 @@
+img.product-img.img-fluid {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-wrapper {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 768px) {
+  img.product-img.img-fluid {
+    height: 180px;
+  }
+}

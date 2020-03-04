@@ -1,0 +1,83 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 col-sm-12">
+      <div class="card card-box">
+        <div class="card-head">
+          <a routerLink="/admin" id="panel-button" class="mdl-button mdl-button--icon collapsed">
+            <i class="material-icons">arrow_back_ios</i>
+          </a>
+          <header>Add Admin</header>
+        </div>
+        <div class="card-body row">
+          <form action="" class="adminFrom" id="adminFrom">
+            <div class="col-lg-6 p-t-10">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                <label for="username">Username</label>
+                <input class="mdl-textfield_input" type="text" id="username">
+              </div>
+            </div>
+            <div class="col-lg-6 p-t-10">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                <label for="email">Email</label>
+                <input class="mdl-textfield_input" type="email" id="email">
+              </div>
+            </div>
+            <div class="col-lg-6 p-t-10">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                <label for="password">Password</label>
+                <input class="mdl-textfield_input" type="text" id="password">
+              </div>
+            </div>
+            <div class="col-lg-6 p-t-10">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                <label for="confirmPassword">Confirm Password</label>
+                <input class="mdl-textfield_input" type="text" id="confirmPassword">
+              </div>
+            </div>
+            <div class="col-lg-12 p-t-10">
+              <div class="checkbox-p-b-0 mdl-textfield  txt-full-width">
+                <label>Authorization</label>
+                <div class="mdl-textfield txt-full-width">
+                  <div class="custom-control custom-checkbox custom-control-block"><input class="custom-control-input"
+                      id="accessManagement" name="accessManagement" type="checkbox" value="accessManagement"><label
+                      class="custom-control-label" for="accessManagement">Access Management System</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-block"><input class="custom-control-input"
+                      id="adminCreator" name="adminCreator" type="checkbox" value="adminCreator"><label
+                      class="custom-control-label" for="adminCreator">Admin Creator System</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-block"><input class="custom-control-input"
+                      id="contentManagement" name="contentManagement" type="checkbox" value="contentManagement"><label
+                      class="custom-control-label" for="contentManagement">Content Management System</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-block"><input class="custom-control-input"
+                      id="orderManagement" name="orderManagement" type="checkbox" value="orderManagement"><label
+                      class="custom-control-label" for="orderManagement">Order Management System</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-block"><input class="custom-control-input"
+                      id="pricingManagement" name="pricingManagement" type="checkbox" value="pricingManagement"><label
+                      class="custom-control-label" for="pricingManagement">Pricing Management System</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-block"><input class="custom-control-input"
+                      id="productManagement" name="productManagement" type="checkbox" value="productManagement"><label
+                      class="custom-control-label" for="productManagement">Product Management System
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 p-t-10 text-center">
+              <button type="reset" class="mdl-button mdl-js-button mdl-button--raised  btn-default">
+                Reset
+              </button>
+              <button type="button" class="mdl-button mdl-js-button mdl-button--raised fill-primary">
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

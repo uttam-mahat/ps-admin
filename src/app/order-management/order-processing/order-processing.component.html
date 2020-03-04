@@ -1,0 +1,216 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <div class="card card-box">
+        <div class="card-head">
+          <a routerLink="/order-management" id="panel-button" class="mdl-button mdl-button--icon collapsed">
+            <i class="material-icons">arrow_back_ios</i>
+          </a>
+          <header>Order Processing</header>
+        </div>
+        <div class="card-body">
+          <div class="table-wrap">
+            <div class="table-responsive dataTables_wrapper">
+              <table #dataTable class="table dataTable">
+                <thead>
+                  <tr role="row">
+                    <th>No</th>
+                    <th>Ordered By</th>
+                    <th>Product Name</th>
+                    <th>Product Detail</th>
+                    <th>Quantity</th>
+                    <th>Shipping Cost</th>
+                    <th>Total Cost</th>
+                    <th>Download File</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>krennova</td>
+                    <td>Wooden Sculpture</td>
+                    <td>4 X 2 in</td>
+                    <td>4</td>
+                    <td>Rs.140</td>
+                    <td>Rs.1540</td>
+                    <td>
+                      <button aria-label="Download" class="btn btn-tbl-download btn-xs hint--top">
+                        <i aria-hidden="true" class="fa fa-download"></i>
+                      </button>
+                    </td>
+                    <td>
+                      <div class="select-input mdl-textfield order-status">
+                        <select class="mdl-textfield_input" formcontrolname="statusId" id="statusId">
+                          <option value="">Processing</option>
+                          <option value="">Delivered</option>
+                          <option value="">Dispatched</option>
+                          <option value="">Ready For Collection</option>
+                          <option value="">Payment Pending</option>
+                          <option value="">Payment Received</option>
+                          <option value="">Deferred 1</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <button aria-label="view" class="btn btn-tbl-view btn-xs hint--top showModal"
+                        data-target="#orderProcessingViewFormModal" data-toggle="modal">
+                        <i class="fa fa-eye"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>Rahul Amatya</td>
+                    <td>Wooden Sculpture</td>
+                    <td>4 X 2 in</td>
+                    <td>4</td>
+                    <td>Rs.140</td>
+                    <td>Rs.1540</td>
+                    <td>
+                      <button aria-label="Download" class="btn btn-tbl-download btn-xs hint--top">
+                        <i aria-hidden="true" class="fa fa-download"></i>
+                      </button>
+                    </td>
+                    <td>
+                      <div class="select-input mdl-textfield order-status">
+                        <select class="mdl-textfield_input" formcontrolname="statusId" id="statusId">
+                          <option value="">Processing</option>
+                          <option value="">Delivered</option>
+                          <option value="">Dispatched</option>
+                          <option value="">Ready For Collection</option>
+                          <option value="">Payment Pending</option>
+                          <option value="">Payment Received</option>
+                          <option value="">Deferred 1</option>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <button aria-label="view" class="btn btn-tbl-view btn-xs hint--top showModal"
+                        data-target="#orderProcessingViewFormModal" data-toggle="modal">
+                        <i class="fa fa-eye"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Modal orderProcessingViewFormModal start -->
+    <div aria-labelledby="orderProcessingViewFormModal" class="modal detail-view-page-modal right fade show"
+      id="orderProcessingViewFormModal" role="dialog" aria-modal="true">
+      <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header"><a aria-label="Close" class="modal-title" data-dismiss="modal"
+              id="orderProcessingViewFormModal">
+              <i aria-hidden="true" class="fa fa-angle-left"></i>
+              View Order Processing</a>
+          </div>
+          <div class="modal-body">
+            <div class="col-lg-12">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="card card-box">
+                    <div class="card-head">
+                      <header>Order Processing</header>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-group list-group-unbordered">
+                        <li class="list-group-item">
+                          <div class="row">
+                            <div class="col-md-4 col-sm-4"><b>Ordered By</b></div>
+                            <div class="col-md-8 col-sm-8">
+                              <div class="info-desc-item">Krennova</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row">
+                            <div class="col-md-4 col-sm-4"><b>Product Name</b></div>
+                            <div class="col-md-8 col-sm-8">
+                              <div class="info-desc-item">aksdjfskd Name</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row">
+                            <div class="col-md-4 col-sm-4"><b>Product Detail</b></div>
+                            <div class="col-md-8 col-sm-8">
+                              <div class="info-desc-item">4 X 2 in</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row">
+                            <div class="col-md-4 col-sm-4"><b>Quantity</b></div>
+                            <div class="col-md-8 col-sm-8">
+                              <div class="info-desc-item">4</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row">
+                            <div class="col-md-4 col-sm-4"><b>Shipping Cost</b></div>
+                            <div class="col-md-8 col-sm-8">
+                              <div class="info-desc-item">Rs.140</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row">
+                            <div class="col-md-4 col-sm-4"><b>Total Cost</b></div>
+                            <div class="col-md-8 col-sm-8">
+                              <div class="info-desc-item">Rs.1540</div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row">
+                            <div class="col-md-4 col-sm-4"><b>Download File</b></div>
+                            <div class="col-md-8 col-sm-8">
+                              <div class="info-desc-item">
+                                <button aria-label="Download" class="btn btn-tbl-download btn-xs hint--top">
+                                  <i aria-hidden="true" class="fa fa-download"></i>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="row">
+                            <div class="col-md-4 col-sm-4"><b>Status</b></div>
+                            <div class="col-md-8 col-sm-8">
+                              <div class="info-desc-item">
+                                <div class="select-input mdl-textfield order-status p-0">
+                                  <select class="mdl-textfield_input" formcontrolname="statusId" id="statusId">
+                                    <option value="">Processing</option>
+                                    <option value="">Delivered</option>
+                                    <option value="">Dispatched</option>
+                                    <option value="">Ready For Collection</option>
+                                    <option value="">Payment Pending</option>
+                                    <option value="">Payment Received</option>
+                                    <option value="">Deferred 1</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Popup Modal orderProcessingViewFormModal close -->
+  </div>
+</div>

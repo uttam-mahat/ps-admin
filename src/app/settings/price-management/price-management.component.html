@@ -1,0 +1,1143 @@
+<div class="container-fluid">
+
+  <!-- page top bar start -->
+  <div class="page-bar">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card-box">
+          <div class="card-head">
+            <header>Price Management</header>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- page top bar close -->
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="profile-tab-box">
+        <ul class="nav">
+          <li class="nav-item tab-all">
+            <a class="nav-link active show" href="#pricingManagement" data-toggle="tab">
+              Pricing
+            </a>
+          </li>
+          <li class="nav-item tab-all">
+            <a class="nav-link" href="#insertShippingCost" data-toggle="tab">
+              Shipping Cost
+            </a>
+          </li>
+          <li class="nav-item tab-all">
+            <a class="nav-link" href="#additionalOption" data-toggle="tab">
+              Additional Option
+            </a>
+          </li>
+          <li class="nav-item tab-all">
+            <a class="nav-link" href="#paymentModes" data-toggle="tab">
+              Payment Modes
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-content">
+
+        <!-- pricingManagement tab start -->
+        <div class="tab-pane active show" id="pricingManagement">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="card card-box">
+                <div class="card-head">
+                  <div class="card-header-wrapper">
+                    <header>Pricing Management</header>
+                    <div class="tools">
+                      <div class="tool-btn-wrapper">
+                        <button aria-label="Add" class="btn btn-tbl-add btn-xs hint--top showModal"
+                          data-target="#pricingManagementEditAddFormModal" data-toggle="modal">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="table-wrap">
+                    <div class="table-responsive dataTables_wrapper">
+                      <table #dataTable class="table dataTable">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>Major City</th>
+                            <th>Cost</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Kathmandu</td>
+                            <td>s6d5f4</td>
+                            <td>
+                              <button aria-label="edit" class="btn btn-tbl-edit btn-xs hint--top showModal"
+                                data-target="#pricingManagementEditAddFormModal" data-toggle="modal">
+                                <i class="fa fa-pencil-alt"></i>
+                              </button>
+                              <button aria-label="delete" class="btn btn-tbl-delete btn-xs hint--top">
+                                <i class="fa fa-trash-alt"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Popup Modal pricingManagementEditAddFormModal start -->
+              <div class="modal detail-view-page-modal right fade" id="pricingManagementEditAddFormModal" tabindex="-1"
+                role="dialog" aria-labelledby="pricingManagementEditAddFormModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <a class="modal-title" data-dismiss="modal" aria-label="Close"
+                        id="pricingManagementEditAddFormModal">
+                        <i aria-hidden="true" class="fa fa-angle-left"></i>
+                        Pricing Management
+                      </a>
+                    </div>
+                    <div class="modal-body">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card card-box">
+                              <div class="card-head">
+                                <header>Pricing Management</header>
+                              </div>
+                              <div class="card-body row">
+                                <form action="" class="pricingManagementAddForm" id="pricingManagementAddForm">
+                                  <div class="col-lg-12 p-t-10">
+                                    <div class="select-input mdl-textfield txt-full-width">
+                                      <label class="floating-label" for="majorCityId">Major City</label>
+                                      <select class="mdl-textfield_input" formcontrolname="majorCityId"
+                                        id="majorCityId">
+                                        <option disabled="true" selected="true">Choose...</option>
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-12 p-t-10">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                      <label for="cost">Cost</label>
+                                      <input class="mdl-textfield_input" type="text" id="cost">
+                                    </div>
+                                  </div>
+
+                                  <div class="col-lg-12 p-t-10 text-center">
+                                    <button type="reset"
+                                      class="mdl-button mdl-js-button mdl-button--raised  btn-default">
+                                      Reset
+                                    </button>
+                                    <button type="button"
+                                      class="mdl-button mdl-js-button mdl-button--raised fill-primary">
+                                      Save
+                                    </button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Popup Modal pricingManagementEditAddFormModal close -->
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+              <div class="card card-box">
+                <div class="card-head">
+                  <div class="card-header-wrapper">
+                    <header>Pricing for Companies</header>
+                    <div class="tools">
+                      <div class="tool-btn-wrapper">
+                        <button aria-label="Add" class="btn btn-tbl-add btn-xs hint--top showModal"
+                          data-target="#companyPricingManagementEditAddFormModal" data-toggle="modal">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="table-wrap whitespace-nowrap">
+                    <div class="table-responsive dataTables_wrapper">
+                      <table #dataTable class="table dataTable">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>Company Name</th>
+                            <th>Email</th>
+                            <th>Profit Margin</th>
+                            <th>Tax Rate</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Krennova Pvt.Ltd</td>
+                            <td>info@krennova.com</td>
+                            <td>4%</td>
+                            <td>13%</td>
+                            <td>
+                              <div class="btn-wrapper">
+                                <button aria-label="View" class="btn btn-tbl-view btn-xs hint--top showModal"
+                                  data-target="#companyPricingManagementViewFormModal" data-toggle="modal">
+                                  <i class="fa fa-eye"></i>
+                                </button>
+                                <button aria-label="edit" class="btn btn-tbl-edit btn-xs hint--top showModal"
+                                  data-target="#companyPricingManagementEditAddFormModal" data-toggle="modal">
+                                  <i class="fa fa-pencil-alt"></i>
+                                </button>
+                                <button aria-label="delete" class="btn btn-tbl-delete btn-xs hint--top">
+                                  <i class="fa fa-trash-alt"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Popup Modal companyPricingManagementViewFormModal start -->
+              <div aria-labelledby="companyPricingManagementViewFormModal"
+                class="modal detail-view-page-modal right fade show" id="companyPricingManagementViewFormModal"
+                role="dialog" aria-modal="true">
+                <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header"><a aria-label="Close" class="modal-title" data-dismiss="modal"
+                        id="companyPricingManagementViewFormModal">
+                        <i aria-hidden="true" class="fa fa-angle-left"></i>
+                        View Company Pricing</a>
+                    </div>
+                    <div class="modal-body">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card card-box">
+                              <div class="card-head">
+                                <header>Company Pricing</header>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-group list-group-unbordered">
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Company Name</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">Krennova Pvt.Ltd.</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Phone Number</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">9849494499</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Email</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">info@krennova.com</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Corporate Discount</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">4%</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Individual Discount</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">2%</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Profit Margin</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">5%</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Tax Rate</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">13%</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Zone</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">Zone nameksdhf</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Street Address</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">ZstreetAddressone nameksdhf</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>City</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">City namesdf</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Country</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">sdfsdf</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Popup Modal companyPricingManagementViewFormModal close -->
+
+              <!-- Popup Modal companyPricingManagementEditAddFormModal start -->
+              <div class="modal detail-view-page-modal right fade" id="companyPricingManagementEditAddFormModal"
+                tabindex="-1" role="dialog" aria-labelledby="companyPricingManagementEditAddFormModal"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <a class="modal-title" data-dismiss="modal" aria-label="Close"
+                        id="companyPricingManagementEditAddFormModal">
+                        <i aria-hidden="true" class="fa fa-angle-left"></i>
+                        Company Pricing
+                      </a>
+                    </div>
+                    <div class="modal-body">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card card-box">
+                              <div class="card-head">
+                                <header>Company Pricing</header>
+                              </div>
+                              <div class="card-body row">
+                                <form action="" class="companyPricingManagementAddForm"
+                                  id="companyPricingManagementAddForm">
+                                  <div class="col-lg-12 p-t-10">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                      <label for="companyName">Company Name</label>
+                                      <input class="mdl-textfield_input" type="text" id="companyName">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 p-t-10">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                      <label for="phoneNumber">Phone Number</label>
+                                      <input class="mdl-textfield_input" type="number" id="phoneNumber">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 p-t-10">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                      <label for="email">Email</label>
+                                      <input class="mdl-textfield_input" type="text" id="email">
+                                    </div>
+                                  </div>
+
+                                  <div class="col-lg-12 p-t-20">
+                                    <div class="mdl-textfield txt-full-width">
+                                      <div class="sub-header">
+                                        <header>Address</header>
+                                      </div>
+                                      <div class="dashed-divider"></div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 p-t-10">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                      <label for="zone">Zone</label>
+                                      <input class="mdl-textfield_input" type="text" id="zone">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 p-t-10">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                      <label for="streetAddress">Street Address</label>
+                                      <input class="mdl-textfield_input" type="text" id="streetAddress">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 p-t-10">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                      <label for="city">City</label>
+                                      <input class="mdl-textfield_input" type="text" id="city">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 p-t-10">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                      <label for="country">Country</label>
+                                      <input class="mdl-textfield_input" type="text" id="country">
+                                    </div>
+                                  </div>
+
+                                  <div class="col-lg-12 p-t-20">
+                                    <div class="mdl-textfield txt-full-width">
+                                      <div class="sub-header">
+                                        <header>Pricing</header>
+                                      </div>
+                                      <div class="dashed-divider"></div>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 p-t-10">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                      <label for="corporateDiscount">Corporate Discount</label>
+                                      <input class="mdl-textfield_input" type="text" id="corporateDiscount">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 p-t-10">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                      <label for="individualDiscount">Individual Discount</label>
+                                      <input class="mdl-textfield_input" type="text" id="individualDiscount">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 p-t-10">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                      <label for="profitMargin">Profit Margin</label>
+                                      <input class="mdl-textfield_input" type="text" id="profitMargin">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 p-t-10">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                      <label for="taxRate">Tax Rate</label>
+                                      <input class="mdl-textfield_input" type="text" id="taxRate">
+                                    </div>
+                                  </div>
+
+                                  <div class="col-lg-12 p-t-10 text-center">
+                                    <button type="reset"
+                                      class="mdl-button mdl-js-button mdl-button--raised  btn-default">
+                                      Reset
+                                    </button>
+                                    <button type="button"
+                                      class="mdl-button mdl-js-button mdl-button--raised fill-primary">
+                                      Save
+                                    </button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Popup Modal companyPricingManagementEditAddFormModal close -->
+            </div>
+          </div>
+        </div>
+        <!-- pricingManagement tab close -->
+
+        <!-- insertShippingCost tab start -->
+        <div class="tab-pane" id="insertShippingCost">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="card card-box">
+                <div class="card-head">
+                  <div class="card-header-wrapper">
+                    <header>Shipping Cost</header>
+                    <div class="tools">
+                      <div class="tool-btn-wrapper">
+                        <button aria-label="Add" class="btn btn-tbl-add btn-xs hint--top showModal"
+                          data-target="#insertShippingCostEditAddFormModal" data-toggle="modal">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="table-wrap">
+                    <div class="table-responsive dataTables_wrapper">
+                      <table #dataTable class="table dataTable">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>Customer Order</th>
+                            <th>Pricing Management</th>
+                            <th>Mobile Number</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Business Card</td>
+                            <td>sdfsPricing Managementsf</td>
+                            <td>9849494499</td>
+                            <td>
+                              <button aria-label="View" class="btn btn-tbl-view btn-xs hint--top showModal"
+                                data-target="#insertShippingCostViewFormModal" data-toggle="modal">
+                                <i class="fa fa-eye"></i>
+                              </button>
+                              <button aria-label="edit" class="btn btn-tbl-edit btn-xs hint--top showModal"
+                                data-target="#insertShippingCostEditAddFormModal" data-toggle="modal">
+                                <i class="fa fa-pencil-alt"></i>
+                              </button>
+                              <button aria-label="delete" class="btn btn-tbl-delete btn-xs hint--top">
+                                <i class="fa fa-trash-alt"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Popup Modal insertShippingCostViewFormModal start -->
+              <div aria-labelledby="insertShippingCostViewFormModal"
+                class="modal detail-view-page-modal right fade show" id="insertShippingCostViewFormModal" role="dialog"
+                aria-modal="true">
+                <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header"><a aria-label="Close" class="modal-title" data-dismiss="modal"
+                        id="insertShippingCostViewFormModal">
+                        <i aria-hidden="true" class="fa fa-angle-left"></i>
+                        View Shipping Cost</a>
+                    </div>
+                    <div class="modal-body">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card card-box">
+                              <div class="card-head">
+                                <header>Shipping Cost</header>
+                              </div>
+                              <div class="card-body">
+                                <ul class="list-group list-group-unbordered">
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Company Name</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">Krennova Pvt.Ltd.</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Phone Number</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">9849494499</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Email</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">info@krennova.com</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Corporate Discount</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">4%</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Individual Discount</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">2%</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Profit Margin</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">5%</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Tax Rate</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">13%</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Zone</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">Zone nameksdhf</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Street Address</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">ZstreetAddressone nameksdhf</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>City</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">City namesdf</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li class="list-group-item">
+                                    <div class="row">
+                                      <div class="col-md-4 col-sm-4"><b>Country</b></div>
+                                      <div class="col-md-8 col-sm-8">
+                                        <div class="info-desc-item">sdfsdf</div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Popup Modal insertShippingCostViewFormModal close -->
+
+              <!-- Popup Modal insertShippingCostEditAddFormModal start -->
+              <div class="modal detail-view-page-modal right fade" id="insertShippingCostEditAddFormModal" tabindex="-1"
+                role="dialog" aria-labelledby="insertShippingCostEditAddFormModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <a class="modal-title" data-dismiss="modal" aria-label="Close"
+                        id="insertShippingCostEditAddFormModal">
+                        <i aria-hidden="true" class="fa fa-angle-left"></i>
+                        Shipping Cost
+                      </a>
+                    </div>
+                    <div class="modal-body">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card card-box">
+                              <div class="card-head">
+                                <header>Shipping Cost</header>
+                              </div>
+                              <div class="card-body row">
+                                <form action="" class="insertShippingCostAddForm" id="insertShippingCostAddForm">
+                                  <div class="col-lg-6 p-t-10">
+                                    <div class="select-input mdl-textfield txt-full-width">
+                                      <label class="floating-label" for="pricingManagementId">Pricing Management</label>
+                                      <select class="mdl-textfield_input" formcontrolname="pricingManagementId"
+                                        id="pricingManagementId">
+                                        <option disabled="true" selected="true">Choose...</option>
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6 p-t-10">
+                                    <div class="select-input mdl-textfield txt-full-width">
+                                      <label class="floating-label" for="customerOrderId">Customer Order</label>
+                                      <select class="mdl-textfield_input" formcontrolname="customerOrderId"
+                                        id="customerOrderId">
+                                        <option disabled="true" selected="true">Choose...</option>
+                                        <option>option 1</option>
+                                        <option>option 2</option>
+                                        <option>option 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-12 p-t-10">
+                                    <div
+                                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                      <label for="mobileNumber">Mobile Number</label>
+                                      <input class="mdl-textfield_input" type="number" id="mobileNumber">
+                                    </div>
+                                  </div>
+                                  <div class="row" id="customerAddressContainer">
+                                    <div class="col-lg-12">
+                                      <div class="multiple-add-field">
+                                        <div class="inner-multiple-add-field" formarrayname="customerAddresss">
+                                          <div class="row">
+                                            <div class="col-lg-2 text-center flex-delete-btn"><button
+                                                class="btn bg-success btn-xs"> 1 </button>
+                                            </div>
+                                            <div class="col-lg-8">
+                                              <div class="row">
+                                                <div class="col-lg-12 p-t-10">
+                                                  <div class="select-input mdl-textfield txt-full-width">
+                                                    <label class="floating-label" for="shippingOptionId">Shipping
+                                                      Option</label>
+                                                    <select class="mdl-textfield_input"
+                                                      formcontrolname="shippingOptionId" id="shippingOptionId">
+                                                      <option disabled="true" selected="true">Choose...</option>
+                                                      <option>option 1</option>
+                                                      <option>option 2</option>
+                                                      <option>option 3</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-12 p-t-10">
+                                                  <div class="select-input mdl-textfield txt-full-width">
+                                                    <label class="floating-label" for="secondaryMajorCityId">Secondary
+                                                      Major City</label>
+                                                    <select class="mdl-textfield_input"
+                                                      formcontrolname="secondaryMajorCityId" id="secondaryMajorCityId">
+                                                      <option disabled="true" selected="true">Choose...</option>
+                                                      <option>option 1</option>
+                                                      <option>option 2</option>
+                                                      <option>option 3</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-12 p-t-10">
+                                                  <div
+                                                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                                    <label for="secondaryAddress">Secondary Address</label>
+                                                    <input class="mdl-textfield_input" type="text"
+                                                      id="secondaryAddress">
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-lg-2 text-center flex-delete-btn"><button
+                                                aria-label="delete" class="btn btn-tbl-minus btn-xs hint--top"><i
+                                                  class="fa fa-trash-alt"></i></button></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-12 offset-lg-1 p-t-10 add-btn-group"><button
+                                        class="btn mdl-button--raised bg-success" type="button"><i
+                                          class="material-icons add-icon">add</i>Customer Address</button></div>
+                                  </div>
+
+                                  <div class="col-lg-12 p-t-10 text-center">
+                                    <button type="reset"
+                                      class="mdl-button mdl-js-button mdl-button--raised  btn-default">
+                                      Reset
+                                    </button>
+                                    <button type="button"
+                                      class="mdl-button mdl-js-button mdl-button--raised fill-primary">
+                                      Save
+                                    </button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Popup Modal insertShippingCostEditAddFormModal close -->
+            </div>
+          </div>
+        </div>
+        <!-- insertShippingCost tab close -->
+
+        <!-- additionalOption tab start -->
+        <div class="tab-pane" id="additionalOption">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="card card-box">
+                <div class="card-head">
+                  <div class="card-header-wrapper">
+                    <header>Additional Option</header>
+                    <div class="tools">
+                      <div class="tool-btn-wrapper">
+                        <button aria-label="Add" class="btn btn-tbl-add btn-xs hint--top showModal"
+                          data-target="#additionalOptionEditAddFormModal" data-toggle="modal">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="table-wrap">
+                    <div class="table-responsive dataTables_wrapper">
+                      <table #dataTable class="table dataTable">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th>Cost</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>lorem Name</td>
+                            <td>s6d5f4</td>
+                            <td>
+                              <button aria-label="view" class="btn btn-tbl-view btn-xs hint--top showModal"
+                                data-target="#additionalOptionViewFormModal" data-toggle="modal">
+                                <i class="fa fa-eye"></i>
+                              </button>
+                              <button aria-label="edit" class="btn btn-tbl-edit btn-xs hint--top showModal"
+                                data-target="#additionalOptionEditAddFormModal" data-toggle="modal">
+                                <i class="fa fa-pencil-alt"></i>
+                              </button>
+                              <button aria-label="delete" class="btn btn-tbl-delete btn-xs hint--top">
+                                <i class="fa fa-trash-alt"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal additionalOptionViewFormModal start -->
+            <div aria-labelledby="additionalOptionViewFormModal" class="modal detail-view-page-modal right fade show"
+              id="additionalOptionViewFormModal" role="dialog" aria-modal="true">
+              <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header"><a aria-label="Close" class="modal-title" data-dismiss="modal"
+                      id="additionalOptionViewFormModal">
+                      <i aria-hidden="true" class="fa fa-angle-left"></i>
+                      View Additional Option</a>
+                  </div>
+                  <div class="modal-body">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                          <div class="card card-box">
+                            <div class="card-head">
+                              <header>Additional Option Name</header>
+                            </div>
+                            <div class="card-body">
+                              <ul class="list-group list-group-unbordered">
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-4 col-sm-4"><b>Name</b></div>
+                                    <div class="col-md-8 col-sm-8">
+                                      <div class="info-desc-item">fg ANmed</div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-4 col-sm-4"><b>Cost</b></div>
+                                    <div class="col-md-8 col-sm-8">
+                                      <div class="info-desc-item">1500</div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal additionalOptionViewFormModal close -->
+
+            <!-- Popup Modal additionalOptionEditAddFormModal start -->
+            <div class="modal detail-view-page-modal right fade" id="additionalOptionEditAddFormModal" tabindex="-1"
+              role="dialog" aria-labelledby="additionalOptionEditAddFormModal" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <a class="modal-title" data-dismiss="modal" aria-label="Close"
+                      id="additionalOptionEditAddFormModal">
+                      <i aria-hidden="true" class="fa fa-angle-left"></i>
+                      Additional Option
+                    </a>
+                  </div>
+                  <div class="modal-body">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                          <div class="card card-box">
+                            <div class="card-head">
+                              <header>Additional Option</header>
+                            </div>
+                            <div class="card-body row">
+                              <form action="" class="additionalOptionAddForm" id="additionalOptionAddForm">
+                                <div class="col-lg-12 p-t-10">
+                                  <div
+                                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                    <label for="name">Name</label>
+                                    <input class="mdl-textfield_input" type="text" id="name">
+                                  </div>
+                                </div>
+                                <div class="col-lg-12 p-t-10">
+                                  <div
+                                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                    <label for="cost">Cost</label>
+                                    <input class="mdl-textfield_input" type="text" id="cost">
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-12 p-t-10 text-center">
+                                  <button type="reset" class="mdl-button mdl-js-button mdl-button--raised  btn-default">
+                                    Reset
+                                  </button>
+                                  <button type="button"
+                                    class="mdl-button mdl-js-button mdl-button--raised fill-primary">
+                                    Save
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal additionalOptionEditAddFormModal close -->
+          </div>
+        </div>
+        <!-- additionalOption tab close -->
+
+        <!-- paymentModes tab start -->
+        <div class="tab-pane" id="paymentModes">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="card card-box">
+                <div class="card-head">
+                  <div class="card-header-wrapper">
+                    <header>Payment Modes</header>
+                    <div class="tools">
+                      <div class="tool-btn-wrapper">
+                        <button aria-label="Add" class="btn btn-tbl-add btn-xs hint--top showModal"
+                          data-target="#paymentModesEditAddFormModal" data-toggle="modal">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="table-wrap">
+                    <div class="table-responsive dataTables_wrapper">
+                      <table #dataTable class="table dataTable">
+                        <thead>
+                          <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>esewa</td>
+                            <td>
+                              <button aria-label="view" class="btn btn-tbl-view btn-xs hint--top showModal"
+                                data-target="#paymentModesViewFormModal" data-toggle="modal">
+                                <i class="fa fa-eye"></i>
+                              </button>
+                              <button aria-label="edit" class="btn btn-tbl-edit btn-xs hint--top showModal"
+                                data-target="#paymentModesEditAddFormModal" data-toggle="modal">
+                                <i class="fa fa-pencil-alt"></i>
+                              </button>
+                              <button aria-label="delete" class="btn btn-tbl-delete btn-xs hint--top">
+                                <i class="fa fa-trash-alt"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Popup Modal paymentModesViewFormModal start -->
+            <div aria-labelledby="paymentModesViewFormModal" class="modal detail-view-page-modal right fade show"
+              id="paymentModesViewFormModal" role="dialog" aria-modal="true">
+              <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header"><a aria-label="Close" class="modal-title" data-dismiss="modal"
+                      id="paymentModesViewFormModal">
+                      <i aria-hidden="true" class="fa fa-angle-left"></i>
+                      View Payment Modes</a>
+                  </div>
+                  <div class="modal-body">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                          <div class="card card-box">
+                            <div class="card-head">
+                              <header>Payment Modes</header>
+                            </div>
+                            <div class="card-body">
+                              <ul class="list-group list-group-unbordered">
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-4 col-sm-4"><b>Name</b></div>
+                                    <div class="col-md-8 col-sm-8">
+                                      <div class="info-desc-item">Payment ModesName sdf</div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="list-group-item">
+                                  <div class="row">
+                                    <div class="col-md-12 col-sm-12"><b>Description:
+                                      </b></div>
+                                    <div class="col-md-12 col-sm-12">
+                                      <div class="info-desc-item">
+                                        <p>Bharat Prasad Nepal is a senior researcher and M.D. of
+                                          Agrica Nepal. He owns a long experience in termite management and agri trade
+                                          business. He possesses sound knowledge on the pesticides, nursery management
+                                          of seedlings and cut flowers and a renowned termite specialist in Nepal. He
+                                          has attended several trainings on termites.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal paymentModesViewFormModal close -->
+
+            <!-- Popup Modal paymentModesEditAddFormModal start -->
+            <div class="modal detail-view-page-modal right fade" id="paymentModesEditAddFormModal" tabindex="-1"
+              role="dialog" aria-labelledby="paymentModesEditAddFormModal" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-custom-width-sm" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <a class="modal-title" data-dismiss="modal" aria-label="Close" id="paymentModesEditAddFormModal">
+                      <i aria-hidden="true" class="fa fa-angle-left"></i>
+                      Payment Modes
+                    </a>
+                  </div>
+                  <div class="modal-body">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                          <div class="card card-box">
+                            <div class="card-head">
+                              <header>Payment Modes</header>
+                            </div>
+                            <div class="card-body row">
+                              <form action="" class="paymentModesAddForm" id="paymentModesAddForm">
+                                <div class="col-lg-12 p-t-10">
+                                  <div
+                                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                    <label for="name">Name</label>
+                                    <input class="mdl-textfield_input" type="text" id="name">
+                                  </div>
+                                </div>
+                                <div class="col-lg-12 p-t-10">
+                                  <div
+                                    class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label txt-full-width">
+                                    <label for="description">Description</label>
+                                    <ck-editor name="editor1" [(ngModel)]="editorValue" skin="moono-lisa" language="en"
+                                      [fullPage]="true">
+                                    </ck-editor>
+                                  </div>
+                                </div>
+
+                                <div class="col-lg-12 p-t-10 text-center">
+                                  <button type="reset" class="mdl-button mdl-js-button mdl-button--raised  btn-default">
+                                    Reset
+                                  </button>
+                                  <button type="button"
+                                    class="mdl-button mdl-js-button mdl-button--raised fill-primary">
+                                    Save
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Popup Modal paymentModesEditAddFormModal close -->
+          </div>
+        </div>
+        <!-- paymentModes tab close -->
+      </div>
+    </div>
+  </div>
+</div>
