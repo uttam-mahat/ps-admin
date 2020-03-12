@@ -13,15 +13,42 @@ import { OrderDeferredComponent } from './order-deferred/order-deferred.componen
 
 
 const routes: Routes = [
-    { path: 'order-management', component: OrderManagement },
-    { path: 'order-placed', component: OrderPlacedComponent },
-    { path: 'order-processing', component: OrderProcessingComponent },
-    { path: 'order-dispatched', component: OrderDispatchedComponent },
-    { path: 'order-delivered', component: OrderDeliveredComponent },
-    { path: 'order-readyForCollection', component: OrderReadyForCollectionComponent },
-    { path: 'order-paymentPending', component: OrderPaymentPendingComponent },
-    { path: 'order-paymentReceived', component: OrderPaymentReceivedComponent },
-    { path: 'order-deferred', component: OrderDeferredComponent },
+    {
+        path: '',
+        component: OrderManagement
+    },
+    {
+        path: 'placed',
+        component: OrderPlacedComponent
+    },
+    {
+        path: 'processing',
+        component: OrderProcessingComponent
+    },
+    {
+        path: 'dispatched',
+        component: OrderDispatchedComponent
+    },
+    {
+        path: 'delivered',
+        component: OrderDeliveredComponent
+    },
+    {
+        path: 'readyForCollection',
+        component: OrderReadyForCollectionComponent
+    },
+    {
+        path: 'paymentPending',
+        component: OrderPaymentPendingComponent
+    },
+    {
+        path: 'paymentReceived',
+        component: OrderPaymentReceivedComponent
+    },
+    {
+        path: 'deferred',
+        component: OrderDeferredComponent
+    },
 ];
 
 @NgModule({

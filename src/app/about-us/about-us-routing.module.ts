@@ -5,8 +5,14 @@ import { AboutUsViewComponent } from './about-us-view/about-us-view.component';
 import { AboutUsAddEditComponent } from './about-us-add-edit/about-us-add-edit.component';
 
 const routes: Routes = [
-  { path: 'aboutUs', component: AboutUsViewComponent },
-  { path: 'aboutUs-edit', component: AboutUsAddEditComponent },
+  {
+    path: '',
+    component: AboutUsViewComponent
+  },
+  {
+    path: 'edit',
+    component: AboutUsAddEditComponent
+  },
 ];
 
 @NgModule({

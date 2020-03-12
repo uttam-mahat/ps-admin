@@ -12,19 +12,10 @@ import { CKEditorModule } from 'ngx-ckeditor';
 
 import { AlertComponent } from './_components';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
-import { LoginComponent } from './login';;
-import { DashboardComponent } from './dashboard/dashboard.component';
-
 import { LoaderInterceptor } from './_helpers/loader.interceptor';
 import { NgxUiLoaderModule } from 'ngx-ui-loader';
-import { AboutUsModule } from './about-us/about-us.module';
-import { FaqModule } from './faq/faq.module';
-import { ProductModule } from './product/product.module';
-import { OrderManagementModule } from './order-management/order-management.module';
-import { BulkOrdersModule } from './bulk-orders/bulk-orders.module';
-import { AppUsersModule } from './app-users/app-users.module';
-import { CartsModule } from './carts/carts.module';
 
+import { LoginComponent } from './login';
 
 @NgModule({
     imports: [
@@ -34,20 +25,12 @@ import { CartsModule } from './carts/carts.module';
         routing,
         NgxUiLoaderModule,
         CKEditorModule,
-        FormsModule,
-        AboutUsModule,
-        FaqModule,
-        ProductModule,
-        OrderManagementModule,
-        BulkOrdersModule,
-        AppUsersModule,
-        CartsModule
+        FormsModule
     ],
     declarations: [
         AppComponent,
         AlertComponent,
         LoginComponent,
-        DashboardComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

@@ -11,7 +11,6 @@ import { ProductComponent } from './product/product.component';
 import { PriceManagementComponent } from './price-management/price-management.component';
 import { RolesComponent } from './roles/roles.component';
 import { AddressComponent } from './address/address.component';
-import { Settings } from './settings.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { Settings } from './settings.component';
     ProductComponent,
     PriceManagementComponent,
     RolesComponent,
-    AddressComponent,
-    Settings
+    AddressComponent
   ],
   imports: [
     CommonModule,

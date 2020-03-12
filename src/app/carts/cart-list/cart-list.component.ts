@@ -1,12 +1,13 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 declare var $;
 
+
 @Component({
-  selector: 'app-carts',
-  templateUrl: './carts.component.html',
-  styleUrls: ['./carts.component.scss']
+  selector: 'app-cart-list',
+  templateUrl: './cart-list.component.html',
+  styleUrls: ['./cart-list.component.scss']
 })
-export class CartsComponent implements OnInit {
+export class CartListComponent implements OnInit {
 
   @ViewChild('dataTable') table: ElementRef;
   dataTable: any;

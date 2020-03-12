@@ -2,12 +2,12 @@
 
 import { LoginComponent } from './login';
 import { AuthGuard } from './_guards';
-import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes: Routes = [
     {
         path: '',
-        component: DashboardComponent
+        loadChildren: './dashboard/dashboard.module#DashboardModule',
+        pathMatch: 'full'
     },
     {
         path: 'login',
@@ -17,9 +17,44 @@ const appRoutes: Routes = [
         path: 'settings',
         loadChildren: './settings/settings.module#SettingsModule'
     },
+    {
+        path: 'admin',
+        loadChildren: './app-users/admin/admin.module#AdminModule'
+    },
+    {
+        path: 'user-list',
+        loadChildren: './app-users/users/users.module#UsersModule'
+    },
+    {
+        path: 'bulk-orders',
+        loadChildren: './bulk-orders/bulk-orders.module#BulkOrdersModule'
+    },
+    {
+        path: 'cart-list',
+        loadChildren: './carts/carts.module#CartsModule'
+    },
+    {
+        path: 'faqs',
+        loadChildren: './faq/faq.module#FaqModule'
+    },
+    {
+        path: 'orders',
+        loadChildren: './order-management/order-management.module#OrderManagementModule'
+    },
+    {
+        path: 'product',
+        loadChildren: './product/product.module#ProductModule'
+    },
+    {
+        path: 'about-us',
+        loadChildren: './about-us/about-us.module#AboutUsModule'
+    },
 
     // otherwise redirect to home
-    { path: '**', redirectTo: '' }
+    {
+        path: '**',
+        redirectTo: ''
+    }
 ];
 
 export const routing = RouterModule.forRoot(appRoutes, { useHash: true, scrollPositionRestoration: 'enabled' });

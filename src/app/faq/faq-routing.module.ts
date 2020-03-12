@@ -6,9 +6,18 @@ import { FaqsAddComponent } from './faqs-add/faqs-add.component';
 import { FaqsEditComponent } from './faqs-edit/faqs-edit.component';
 
 const routes: Routes = [
-  { path: 'faqs', component: FaqsComponent },
-  { path: 'faqs-add', component: FaqsAddComponent },
-  { path: 'faqs-edit', component: FaqsEditComponent },
+  {
+    path: '',
+    component: FaqsComponent
+  },
+  {
+    path: 'add',
+    component: FaqsAddComponent
+  },
+  {
+    path: 'edit',
+    component: FaqsEditComponent
+  },
 ];
 
 @NgModule({

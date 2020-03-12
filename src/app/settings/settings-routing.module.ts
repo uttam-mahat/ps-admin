@@ -6,34 +6,31 @@ import { ProductComponent } from './product/product.component';
 import { PriceManagementComponent } from './price-management/price-management.component';
 import { RolesComponent } from './roles/roles.component';
 import { AddressComponent } from './address/address.component';
-import { Settings } from './settings.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: Settings,
-    children: [
-      {
-        path: 'homepage',
-        component: HomepageComponent
-      },
-      {
-        path: 'product',
-        component: ProductComponent
-      },
-      {
-        path: 'price-management',
-        component: PriceManagementComponent
-      },
-      {
-        path: 'roles',
-        component: RolesComponent
-      },
-      {
-        path: 'address',
-        component: AddressComponent
-      },
-    ]
+    component: HomepageComponent
+  },
+  {
+    path: 'homepage',
+    component: HomepageComponent
+  },
+  {
+    path: 'product',
+    component: ProductComponent
+  },
+  {
+    path: 'price-management',
+    component: PriceManagementComponent
+  },
+  {
+    path: 'roles',
+    component: RolesComponent
+  },
+  {
+    path: 'address',
+    component: AddressComponent
   },
 
 ];

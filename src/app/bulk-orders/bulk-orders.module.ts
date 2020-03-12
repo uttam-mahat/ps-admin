@@ -10,8 +10,6 @@ import { BulkOrdersAddComponent } from './bulk-orders-add/bulk-orders-add.compon
 import { BulkOrdersEditComponent } from './bulk-orders-edit/bulk-orders-edit.component';
 import { BulkOrdersViewComponent } from './bulk-orders-view/bulk-orders-view.component';
 
-
-
 @NgModule({
   declarations: [
     BulkOrdersComponent,

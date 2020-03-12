@@ -1,23 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CartsRoutingModule } from './carts-routing.module';
+import { DashboardRoutingModule } from './dashboard-routing.module';
 
 import { FormsModule } from '@angular/forms';
 import { CKEditorModule } from 'ngx-ckeditor';
 
-import { CartListComponent } from './cart-list/cart-list.component';
-
+import { DashboardComponent } from './dashboard.component';
 
 @NgModule({
   declarations: [
-    CartListComponent
+    DashboardComponent
   ],
   imports: [
     CommonModule,
-    CartsRoutingModule,
+    DashboardRoutingModule,
     CKEditorModule,
     FormsModule,
   ]
 })
-export class CartsModule { }
+export class DashboardModule { }
